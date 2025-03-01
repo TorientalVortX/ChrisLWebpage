@@ -1,0 +1,482 @@
+/* Unique identifier for verification: Updated on February 28, 2025, by Grok 3 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d; /* Dark black background for a coder aesthetic */
+    color: #e0e0e0; /* Light gray text for contrast on dark background */
+    line-height: 1.6;
+    padding-top: 80px; /* Increased to ensure navbar doesn’t overlap content */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container horizontally in the viewport */
+    padding: 0 40px; /* Increased horizontal padding for better spacing */
+    width: 100%; /* Ensures container spans full width before max-width applies */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    max-width: calc(100% - 46.4rem); /* Desktop width as requested */
+    width: 100%; /* Ensures full width up to max-width on desktop */
+    margin: 0 auto; /* Centers the navbar horizontally */
+    background: #1a1a1a; /* Dark gray background for a coder look */
+    box-shadow: 0 2px 15px rgba(0, 180, 216, 0.3); /* Cyan shadow for depth */
+    padding: 15px 40px; /* Matches container padding for consistency on desktop */
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left on desktop */
+    align-items: center;
+    z-index: 1000; /* Ensures navbar stays on top of all content */
+    border-bottom: 2px solid #00b4d8; /* Bright cyan border for standout */
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default on desktop */
+    font-size: 30px; /* Larger icon for better tap target */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00b4d8; /* Bright cyan for a coder-inspired accent */
+    padding: 5px 10px; /* Increased padding for touch-friendly tap target */
+    margin-right: 0; /* Pushes hamburger to the right side on mobile */
+    margin-left: auto; /* Ensures hamburger stays on the right */
+}
+
+.logo {
+    font-size: 28px; /* Increased for better visibility */
+    font-weight: 700;
+    color: #ff4d4d; /* Bright red for a standout logo */
+    margin-right: 40px; /* Increased spacing for better balance on desktop */
+    text-shadow: 0 2px 5px rgba(255, 77, 77, 0.5); /* Subtle red glow for coder vibe */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 25px; /* Increased margin for better spacing */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light gray for contrast on dark background */
+    font-weight: 500;
+    font-size: 16px; /* Slightly larger for readability */
+    transition: color 0.3s, transform 0.2s, background-color 0.3s; /* Added background-color transition */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00b4d8; /* Bright cyan for a coder-inspired highlight */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+    background-color: rgba(0, 180, 216, 0.2); /* Subtle cyan background highlight on hover */
+}
+
+/* Sections */
+.section {
+    min-height: 100vh;
+    padding: 100px 0 0; /* Increased top padding for better spacing */
+    display: none;
+    overflow: auto; /* Allows scrolling if content exceeds viewport height */
+    background: #1a1a1a; /* Dark gray background for a coder look */
+}
+
+.section.active {
+    display: block;
+}
+
+h1, h2 {
+    text-align: center; /* Centers headings within the container */
+}
+
+h1 {
+    font-size: 60px; /* Increased for better visual hierarchy */
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ff4d4d; /* Bright red for standout */
+    text-shadow: 0 4px 8px rgba(255, 77, 77, 0.5); /* Subtle red glow for coder vibe */
+}
+
+h2 {
+    font-size: 40px; /* Increased for better visual hierarchy */
+    margin-bottom: 30px;
+    color: #00b4d8; /* Bright cyan for standout */
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 180, 216, 0.5); /* Subtle cyan glow for coder vibe */
+}
+
+/* Hero */
+.hero {
+    text-align: center; /* Centers all hero content */
+    padding-top: 120px; /* Adjusted for better vertical spacing */
+    padding-bottom: 60px; /* Added bottom padding to balance content */
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%); /* Dark gradient for coder aesthetic */
+}
+
+.hero p {
+    font-size: 20px; /* Increased for readability */
+    color: #e0e0e0; /* Light gray for contrast on dark background */
+    margin-bottom: 30px; /* Increased margin for better spacing */
+    max-width: 600px; /* Limits width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 25px; /* Increased padding for a boxed effect */
+    background: #2d2d2d; /* Slightly lighter dark gray for contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 15px rgba(0, 180, 216, 0.2); /* Cyan shadow for pop */
+    font-family: 'Consolas', monospace; /* Monospace font for coder vibe */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centers social links horizontally */
+    gap: 20px; /* Increased spacing between social links */
+    margin-top: 20px; /* Added top margin for spacing */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ff4d4d; /* Bright red for standout links */
+    font-weight: 600;
+    font-size: 18px; /* Increased for better visibility */
+    padding: 10px 15px; /* Added padding for a button-like effect */
+    background: #2d2d2d; /* Dark gray background for contrast */
+    border: 2px solid #ff4d4d; /* Red border for pop */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: color 0.3s, transform 0.2s, background-color 0.3s, border-color 0.3s; /* Added transitions */
+    font-family: 'Consolas', monospace; /* Monospace font for coder vibe */
+}
+
+.social-links a:hover {
+    color: #00b4d8; /* Bright cyan on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+    background-color: #2d2d2d; /* Slightly darker on hover for contrast */
+    border-color: #00b4d8; /* Matching border on hover */
+}
+
+/* About */
+#about p {
+    max-width: 800px;
+    margin: 0 auto; /* Centers the paragraph within the container */
+    text-align: center; /* Ensures text is centered */
+    font-size: 18px; /* Increased for readability */
+    color: #e0e0e0; /* Light gray for contrast on dark background */
+    padding: 20px 30px; /* Increased padding for a boxed effect */
+    background: #2d2d2d; /* Slightly lighter dark gray for contrast */
+    border-radius: 12px; /* Larger rounded corners for a modern look */
+    box-shadow: 0 4px 15px rgba(0, 180, 216, 0.2); /* Cyan shadow for pop */
+    font-family: 'Consolas', monospace; /* Monospace font for coder vibe */
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers skill cards horizontally */
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 40px 0; /* Increased vertical padding for better layout */
+}
+
+.skill-card {
+    background: #2d2d2d; /* Dark gray background for coder look */
+    padding: 15px 30px; /* Increased padding for better appearance */
+    border-radius: 12px; /* Larger rounded corners for a modern look */
+    box-shadow: 0 6px 20px rgba(0, 180, 216, 0.2); /* Enhanced cyan shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+    font-size: 16px; /* Slightly larger for readability */
+    font-weight: 500;
+    color: #00b4d8; /* Bright cyan for standout */
+    border: 2px solid #ff4d4d; /* Bright red border for pop, softened with opacity */
+    font-family: 'Consolas', monospace; /* Monospace font for coder vibe */
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 77, 77, 0.3); /* Enhanced red shadow on hover */
+    border-color: #00b4d8; /* Cyan border on hover for contrast */
+}
+
+/* Projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for mobile */
+    gap: 40px; /* Increased gap for better spacing and modern look */
+    justify-content: center; /* Centers project cards horizontally */
+    padding: 60px 0; /* Increased vertical padding for better layout */
+}
+
+.project-card {
+    background: #2d2d2d; /* Dark gray background for coder look */
+    border-radius: 12px; /* Larger rounded corners for a modern look */
+    padding: 25px; /* Increased padding for better appearance */
+    box-shadow: 0 6px 20px rgba(0, 180, 216, 0.2); /* Enhanced cyan shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+    border: 2px solid rgba(255, 77, 77, 0.8); /* Softer red border with opacity for coder vibe */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 77, 77, 0.3); /* Enhanced red shadow on hover */
+    border-color: #00b4d8; /* Cyan border on hover for contrast */
+}
+
+.project-card h3 {
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    color: #ff4d4d; /* Bright red for standout titles */
+    text-align: center; /* Centers project titles */
+    font-size: 22px; /* Increased for better visibility */
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(255, 77, 77, 0.5); /* Subtle red glow for coder vibe */
+}
+
+.project-card p {
+    color: #e0e0e0; /* Light gray for contrast on dark background */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    text-align: center; /* Centers project descriptions */
+    font-size: 16px; /* Increased for readability */
+    font-family: 'Consolas', monospace; /* Monospace font for coder vibe */
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #ff4d4d; /* Bright red for standout links */
+    font-weight: 600;
+    display: block; /* Ensures link is block-level for centering */
+    text-align: center; /* Centers project links */
+    font-size: 18px; /* Increased for better visibility */
+    padding: 10px 15px; /* Added padding for a button-like effect */
+    background: #2d2d2d; /* Dark gray background for contrast */
+    border: 2px solid #ff4d4d; /* Red border for pop */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: color 0.3s, transform 0.2s, background-color 0.3s, border-color 0.3s; /* Added transitions */
+    font-family: 'Consolas', monospace; /* Monospace font for coder vibe */
+}
+
+.project-card a:hover {
+    color: #00b4d8; /* Bright cyan on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+    background-color: #2d2d2d; /* Slightly darker on hover for contrast */
+    border-color: #00b4d8; /* Matching border on hover */
+}
+
+/* Contact */
+.contact-info {
+    text-align: center; /* Centers all contact info */
+    padding: 40px 0; /* Increased vertical padding for better layout */
+    background: #1a1a1a; /* Dark gray background for coder look */
+}
+
+.contact-info p {
+    margin: 15px 0; /* Increased margin for better spacing */
+    font-size: 16px; /* Reduced for better readability on mobile */
+    color: #e0e0e0; /* Light gray for contrast on dark background */
+    padding: 10px 15px; /* Reduced padding for a boxed effect on mobile */
+    background: #2d2d2d; /* Slightly lighter dark gray for contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 15px rgba(0, 180, 216, 0.2); /* Cyan shadow for pop */
+    font-family: 'Consolas', monospace; /* Monospace font for coder vibe */
+}
+
+.contact-info a {
+    color: #ff4d4d; /* Bright red for standout links */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px; /* Reduced for better fit on medium mobile */
+    padding: 8px 15px; /* Reduced padding for smaller tap targets on mobile */
+    background: #2d2d2d; /* Dark gray background for contrast */
+    border: 2px solid #ff4d4d; /* Red border for pop */
+    border-radius: 6px; /* Smaller rounded corners for mobile */
+    transition: color 0.3s, transform 0.2s, background-color 0.3s, border-color 0.3s; /* Added transitions */
+    font-family: 'Consolas', monospace; /* Monospace font for coder vibe */
+    display: inline-block; /* Ensures width adjusts to content */
+    min-width: 120px; /* Minimum width for touch targets */
+    text-align: center; /* Centers text within button */
+}
+
+.contact-info a:hover {
+    color: #00b4d8; /* Bright cyan on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+    background-color: #2d2d2d; /* Slightly darker on hover for contrast */
+    border-color: #00b4d8; /* Matching border on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Adjusted for smaller screens */
+    }
+
+    .navbar {
+        max-width: calc(100% - 40px); /* Matches container width on mobile */
+        padding: 10px 20px; /* Reduced padding for mobile, matching container padding */
+        margin: 0 auto; /* Centers the navbar to match container width */
+        box-sizing: border-box; /* Ensures padding and border don’t extend beyond width */
+    }
+
+    .menu-toggle {
+        display: block; /* Shows hamburger menu on mobile */
+        margin-right: 0; /* Ensures hamburger stays on the right */
+        margin-left: auto; /* Pushes hamburger to the right side */
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-right: 0; /* Remove right margin on mobile */
+        margin-left: 20px; /* Pushes logo to the left on mobile, opposite of hamburger */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px; /* Keeps menu on the right side */
+        background: #1a1a1a; /* Dark gray background for coder look */
+        padding: 20px;
+        display: none;
+        box-shadow: 0 2px 15px rgba(0, 180, 216, 0.3); /* Cyan shadow for pop */
+        border-radius: 0 0 8px 8px; /* Rounded corners for mobile menu */
+        width: 200px; /* Fixed width for mobile menu */
+        text-align: right; /* Aligns links to the right */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0; /* Increased margin for better spacing on mobile */
+    }
+
+    .nav-links a {
+        font-size: 16px; /* Maintain readability on mobile */
+        display: block; /* Ensures full width on mobile */
+        padding: 10px 0; /* Adds vertical padding for touch targets */
+        color: #e0e0e0; /* Light gray for contrast on dark background */
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: #ff4d4d; /* Bright red for standout on mobile */
+        transform: translateY(-2px); /* Subtle lift effect on hover */
+        background-color: rgba(255, 77, 77, 0.2); /* Subtle red background highlight on hover */
+    }
+
+    .container {
+        padding: 0 20px; /* Adjusted padding for mobile */
+    }
+
+    .hero {
+        padding-top: 80px; /* Reduced padding for mobile screens */
+        padding-bottom: 40px; /* Reduced bottom padding for mobile */
+    }
+
+    h1 {
+        font-size: 40px; /* Reduced for mobile screens */
+    }
+
+    h2 {
+        font-size: 28px; /* Reduced for mobile screens */
+    }
+
+    .hero p, #about p, .contact-info p, .project-card p {
+        font-size: 16px; /* Reduced for mobile readability */
+    }
+
+    .section {
+        padding: 60px 0 0; /* Reduced padding for mobile screens */
+    }
+
+    .skills-container, .projects-container {
+        grid-template-columns: 1fr; /* Stack cards vertically on mobile */
+        gap: 15px; /* Reduced gap for mobile */
+    }
+
+    .skill-card, .project-card {
+        padding: 15px 20px; /* Reduced padding for mobile */
+        width: 100%; /* Ensures full width on mobile */
+    }
+
+    .social-links {
+        flex-direction: column; /* Stacks social links vertically on mobile */
+        gap: 10px; /* Reduced gap for mobile */
+    }
+
+    .social-links a {
+        font-size: 16px; /* Reduced for mobile readability */
+    }
+
+    /* Additional adjustments for medium mobile devices (e.g., 375px) */
+    .contact-info a {
+        font-size: 14px; /* Further reduced for very narrow screens */
+        padding: 6px 12px; /* Reduced padding for smaller tap targets */
+        min-width: 100px; /* Reduced minimum width for better fit */
+        margin: 5px 0; /* Reduced margin for tighter spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 20px; /* Maintain padding to match container width for very small screens */
+        max-width: calc(100% - 40px); /* Maintains container width match on very small screens */
+    }
+
+    .container {
+        padding: 0 20px; /* Maintain padding for consistency */
+    }
+
+    .hero {
+        padding-top: 60px; /* Further reduced padding for very small screens */
+        padding-bottom: 30px; /* Further reduced bottom padding for mobile */
+    }
+
+    h1 {
+        font-size: 32px; /* Further reduced for very small screens */
+    }
+
+    h2 {
+        font-size: 24px; /* Further reduced for very small screens */
+    }
+
+    .logo {
+        font-size: 18px;
+        margin-left: 15px; /* Further reduced spacing on very small screens */
+    }
+
+    .nav-links {
+        width: 180px; /* Slightly reduced width for very small screens */
+        right: 20px; /* Adjusted position for very small screens */
+        padding: 15px; /* Reduced padding for very small screens */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Reduced margin for very small screens */
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Further reduced for very small screens */
+        padding: 8px 0; /* Reduced padding for touch targets on very small screens */
+    }
+
+    .menu-toggle {
+        font-size: 24px; /* Reduced for very small screens */
+        padding: 5px 8px; /* Reduced padding for very small screens */
+    }
+
+    .contact-info a {
+        font-size: 14px; /* Maintain reduced size for very small screens */
+        padding: 6px 12px; /* Maintain reduced padding */
+        min-width: 90px; /* Further reduced minimum width for very small screens */
+        margin: 3px 0; /* Further reduced margin for tighter spacing */
+    }
+}
