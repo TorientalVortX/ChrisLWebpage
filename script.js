@@ -41,7 +41,7 @@ async function fetchGitHubProjects() {
         const repos = await response.json();
         
         const projectsContainer = document.getElementById('projects-container');
-        repos.slice(0, 6).forEach(repo => {  // Limiting to 6 projects for display
+        repos.slice(0, 12).forEach(repo => {  // Limiting to 6 projects for display
             const projectCard = document.createElement('div');
             projectCard.classList.add('project-card');
             projectCard.innerHTML = `
