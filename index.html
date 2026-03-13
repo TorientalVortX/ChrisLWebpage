@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Ryan Lipina - Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Christopher Ryan Lipina — Full-Stack Developer & Database Solutions Architect specializing in FileMaker, web applications, and API integrations.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">CRL</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-greeting">Hi, my name is</span>
+                <h1 class="hero-title">
+                    <span class="text-gradient" id="heroName">Christopher Ryan Lipina</span>
+                </h1>
+                <p class="hero-subtitle">Full-Stack Developer &amp; Database Solutions Architect</p>
+                <p class="hero-description">
+                    Highly motivated professional with a strong foundation in computer science and hands-on experience in 
+                    FileMaker development, PHP web applications, API integrations, and workflow automation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/TorientalVortX" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/christopherlipina/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:christopherryanlipina@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">developer.js</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Chris Lipina"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full-Stack Dev"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"FileMaker"</span>,
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"PHP"</span>,
+    <span class="code-string">"Python"</span>,
+    <span class="code-string">"C#"</span>
+  ],
+  <span class="code-prop">apis</span>: <span class="code-number">6</span>,
+  <span class="code-prop">passionate</span>: <span class="code-keyword">true</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about reveal">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated developer with expertise in database solutions, web development, and API integrations. 
+                        With a Computer Science degree from <strong>Southeast Missouri State University</strong> and professional experience at 
+                        <strong>Skeleton Key</strong> and <strong>Anew Transport</strong>, I bring a versatile skill set spanning software development, 
+                        custom workflow automation, and technical problem-solving.
+                    </p>
+                    <p>
+                        My passion lies in solving complex technical challenges and building systems that enhance operational 
+                        efficiency. I've worked with diverse clients including <strong>SEYER Industries</strong>, <strong>Bass Pro</strong>, <strong>Intermediate Unit 1</strong>, 
+                        and the <strong>City of Florissant</strong>, delivering customized solutions that address unique business objectives.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 data-target="20" data-suffix="+">0</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 data-target="4">0</h3>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 data-target="14">0</h3>
+                            <p>Languages Known</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience reveal">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">02.</span> Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Dispatcher</h3>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Nov 2025 &mdash; Present</span>
+                        </div>
+                        <h4><i class="fas fa-building"></i> Anew Solutions (Anew Transport) &mdash; Pevely, MO</h4>
+                        <ul>
+                            <li>Handle dispatching services for loads in the trucking industry, coordinating carriers for clients such as Amazon and Enterprise</li>
+                            <li>Manage outbound communications, customer service responsibilities, and tow dispatches</li>
+                            <li>Created a local web app for personalized note-taking and tow management tracking</li>
+                            <li>Collaborated with team to create a training SOP and tow tracker in Excel</li>
+                            <li>Gained proficiency in platforms such as Zendesk and Turvo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Laborer / IT Support</h3>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Mar 2025 &mdash; Nov 2025</span>
+                        </div>
+                        <h4><i class="fas fa-building"></i> Danny's Top Shop &mdash; Festus, MO</h4>
+                        <ul>
+                            <li>Provided comprehensive technical support and physical labor for a family-owned countertop business</li>
+                            <li>Combined hands-on manufacturing assistance with technology solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Software Developer</h3>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Dec 2023 &mdash; Dec 2024</span>
+                        </div>
+                        <h4><i class="fas fa-building"></i> Skeleton Key &mdash; St. Louis, MO</h4>
+                        <ul>
+                            <li>Provided custom database solutions and seamless data integration using FileMaker, JavaScript, and PHP for clients in manufacturing, retail, and local government</li>
+                            <li>Developed and refined FileMaker databases to increase workflow efficiency, minimize manual tasks, and improve access to data</li>
+                            <li>Set up and managed FileMaker Server, Cloud, and Claris Connect integrations for smooth data synchronization</li>
+                            <li>Created and supported PHP-driven web applications (FMPDA) enabling web integrations and secure client portals with user authentication</li>
+                            <li>Collaborated with clients including SEYER Industries, Intermediate Unit 1, Bass Pro, and City of Florissant</li>
+                            <li>Incorporated the Mailchimp API to automate email campaigns, manage subscriber lists, and produce analytics reports</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Freelance Programmer</h3>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jul 2023 &mdash; Dec 2023</span>
+                        </div>
+                        <h4><i class="fas fa-laptop-code"></i> Self-Employed &mdash; Missouri (Remote)</h4>
+                        <ul>
+                            <li>Delivered freelance software development projects using Java and Python</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Summer Computer Technician</h3>
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Summer 2018</span>
+                        </div>
+                        <h4><i class="fas fa-building"></i> North County School District R-1 &mdash; Desloge, MO</h4>
+                        <ul>
+                            <li>Performed maintenance and cleaning of computer internals for optimal performance</li>
+                            <li>Conducted diagnostics and troubleshooting for hardware and software issues</li>
+                            <li>Collaborated with team to prepare and deploy 20% of Student Chromebooks for 2018/19 School Year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education reveal">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">03.</span> Education</h2>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-details">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <h4>Southeast Missouri State University</h4>
+                    <span class="education-location"><i class="fas fa-map-marker-alt"></i> Cape Girardeau, MO &bull; 2020 &mdash; 2023</span>
+                    <div class="education-honors">
+                        <span class="honor-badge"><i class="fas fa-award"></i> Dean's List, Spring 2023</span>
+                        <span class="honor-badge"><i class="fas fa-star"></i> President's List, Spring 2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="education-details">
+                    <h3>Associate of Arts in Computer Science</h3>
+                    <h4>Mineral Area College</h4>
+                    <span class="education-location"><i class="fas fa-map-marker-alt"></i> Park Hills, MO &bull; 2018 &mdash; 2020</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills reveal">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">04.</span> Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Lua</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">FileMaker Scripting</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database &amp; Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">FileMaker</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">FileMaker Server</span>
+                        <span class="skill-tag">FileMaker Cloud</span>
+                        <span class="skill-tag">Claris Connect</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon"><i class="fas fa-plug"></i></div>
+                    <h3>APIs &amp; Integrations</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Google Maps API</span>
+                        <span class="skill-tag">MailChimp API</span>
+                        <span class="skill-tag">MailGun API</span>
+                        <span class="skill-tag">YouTube Data API</span>
+                        <span class="skill-tag">GitHub API</span>
+                        <span class="skill-tag">Discord API</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools &amp; Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Zendesk</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Google Suite</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Specializations</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">Workflow Automation</span>
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">AI Model Training</span>
+                        <span class="skill-tag">Game Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications reveal">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">05.</span> Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>IC3 Digital Literacy</h3>
+                    <p>Certiport</p>
+                    <span class="cert-code">Code: wbcDY-FMK8</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>FileMaker Server Certified</h3>
+                    <p>Claris</p>
+                    <a href="https://www.credly.com/badges/2fc768e6-efd8-4b24-8851-0f9418ec867d/public_url" target="_blank" rel="noopener noreferrer" class="cert-link"><i class="fas fa-external-link-alt"></i> View Badge</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>FileMaker Cloud Certified</h3>
+                    <p>Claris</p>
+                    <a href="https://www.credly.com/badges/690b0422-7c48-43d7-bc51-593959b8cacc/public_url" target="_blank" rel="noopener noreferrer" class="cert-link"><i class="fas fa-external-link-alt"></i> View Badge</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Claris Connect Certified</h3>
+                    <p>Claris</p>
+                    <a href="https://www.credly.com/badges/ea9e50ef-8c6d-4780-a2eb-69c5a86a7fc9/public_url" target="_blank" rel="noopener noreferrer" class="cert-link"><i class="fas fa-external-link-alt"></i> View Badge</a>
+                </div>
+                <div class="cert-card cert-in-progress">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Cloud Practitioner</h3>
+                    <p>Amazon Web Services</p>
+                    <span class="cert-status"><i class="fas fa-spinner"></i> In Progress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects reveal">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">06.</span> Featured Projects</h2>
+            <p class="section-subtitle">Explore my latest work and contributions from GitHub</p>
+            
+            <div class="projects-grid" id="projects-grid">
+            </div>
+            
+            <div class="projects-footer">
+                <a href="https://github.com/TorientalVortX" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <span><i class="fab fa-github"></i> View All on GitHub</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal">
+        <div class="container">
+            <h2 class="section-title"><span class="title-number">07.</span> Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to discuss potential collaborations or have any questions.</p>
+                    <div class="contact-details">
+                        <a href="mailto:christopherryanlipina@gmail.com" class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">christopherryanlipina@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+15732183708" class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">(573) 218-3708</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Festus, MO 63028</span>
+                            </div>
+                        </div>
+                        <a href="https://www.linkedin.com/in/christopherlipina/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">christopherlipina</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">CRL</span>
+                </div>
+                <p>&copy; 2026 Christopher Ryan Lipina. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/TorientalVortX" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/christopherlipina/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:christopherryanlipina@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
